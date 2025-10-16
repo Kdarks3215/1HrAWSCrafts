@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>#1HrAwsCrafts - Build AWS skills in 1 hour</title>
+  <meta name="description" content="#1HrAwsCrafts is a community-driven, one-hour AWS build challenge series. New mini-project every 3 days - join, learn, and ship!" />
+  <link rel="canonical" href="index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="#1HrAwsCrafts - Build AWS skills in 1 hour" />
+  <meta property="og:description" content="New one-hour AWS mini-project every 3 days. Learn by shipping." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="index.html" />
+  <meta property="og:image" content="images/social/og-default.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="#1HrAwsCrafts - Build AWS skills in 1 hour" />
+  <meta name="twitter:description" content="New one-hour AWS mini-project every 3 days. Learn by shipping." />
+  <meta name="twitter:image" content="images/social/og-default.svg" />
+
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Home">
+        <img src="images/logo.svg" alt="#1HrAwsCrafts logo" />
+        <span>#1HrAwsCrafts</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-meta">
+        <div class="next-project">
+          <span class="label">Next Project:</span>
+          <span id="nextProjectDate">Calculating...</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Ship AWS mini-projects in 1 hour</h1>
+          <p class="tagline">A new hands-on challenge every 3 days. Learn by building.</p>
+          <div class="countdown" aria-live="polite">
+            <div><span id="cd-days">0</span><small>Days</small></div>
+            <div><span id="cd-hours">00</span><small>Hours</small></div>
+            <div><span id="cd-mins">00</span><small>Mins</small></div>
+            <div><span id="cd-secs">00</span><small>Secs</small></div>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="projects.html#current">See Current Project</a>
+            <a class="btn ghost" href="#featured">Featured Teaser</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured project teaser -->
+    <section id="featured" class="featured">
+      <div class="container grid-2">
+        <div class="feature-media">
+          <img src="images/project-screenshots/s3-static-site.jpeg" alt="S3 static website screenshot placeholder" />
+        </div>
+        <div class="feature-copy">
+          <h2>Featured: S3 Static Website on AWS</h2>
+          <p>Kick off with hosting a static website on Amazon S3, fronted by CloudFront, with proper MIME types and caching. Deploy in minutes.</p>
+          <ul class="chips">
+            <li>S3</li><li>CloudFront</li><li>IAM</li><li>Free Tier</li>
+          </ul>
+          <div class="feature-actions">
+            <a class="btn primary" href="projects.html#p1">View Project</a>
+            <a class="btn" href="projects.html">Browse All</a>
+            <a class="btn ghost" href="blog/s3-static-website.html" target="_blank" rel="noopener">Read Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><span class="num">1</span><span class="label">Project Launched</span></div>
+        <div class="stat"><span class="num">3</span><span class="label">Days per Challenge</span></div>
+        <div class="stat"><span class="num">60</span><span class="label">Day Roadmap</span></div>
+        <div class="stat"><span class="num">Unlimited</span><span class="label">Learning</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo small" href="index.html"><img src="images/logo.svg" alt="logo" /><span>#1HrAwsCrafts</span></a>
+        <p class="muted">Mini AWS builds, every 3 days.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social">
+          <a href="#" aria-label="X (Twitter)"><img src="images/social/x.svg" alt="X" /></a>
+          <a href="#" aria-label="GitHub"><img src="images/social/github.svg" alt="GitHub" /></a>
+          <a href="#" aria-label="Discord"><img src="images/social/discord.svg" alt="Discord" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="container tiny">
+      <small>&copy; <span id="year"></span> #1HrAwsCrafts</small>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">Top</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - #1HrAwsCrafts</title>
+  <meta name="description" content="Browse the #1HrAwsCrafts roadmap. Filter by AWS service, difficulty, and status. New one-hour project every 3 days." />
+  <link rel="canonical" href="projects.html" />
+  <meta property="og:title" content="Projects - #1HrAwsCrafts" />
+  <meta property="og:description" content="Filterable roadmap of 20+ one-hour AWS mini-projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="projects.html" />
+  <meta property="og:image" content="images/social/og-default.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects - #1HrAwsCrafts" />
+  <meta name="twitter:description" content="Filterable roadmap of one-hour AWS mini-projects." />
+  <meta name="twitter:image" content="images/social/og-default.svg" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="projects">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Home">
+        <img src="images/logo.svg" alt="#1HrAwsCrafts logo" />
+        <span>#1HrAwsCrafts</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-meta">
+        <div class="next-project">
+          <span class="label">Next Project:</span>
+          <span id="nextProjectDate">Calculating...</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="current" class="spotlight">
+      <div class="container grid-2">
+        <div>
+          <h1>Current Spotlight: S3 Static Website</h1>
+          <p>Host a static site on S3 with correct MIME types and CloudFront distribution. Perfect starter to learn AWS web hosting quickly.</p>
+          <ul class="chips"><li>S3</li><li>CloudFront</li><li>IAM</li></ul>
+          <p><strong>Difficulty:</strong> Beginner &middot; <strong>Status:</strong> In Progress</p>
+          <div class="feature-actions">
+            <a class="btn primary" href="#p1">Jump to Card</a>
+            <a class="btn ghost" href="blog/s3-static-website.html" target="_blank" rel="noopener">Read Blog</a>
+          </div>
+        </div>
+        <div>
+          <img src="images/project-screenshots/s3-static-site.svg" alt="S3 static site" />
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="roadmap">
+      <div class="container cards-grid" id="projectsGrid">
+        <!-- 20 project cards -->
+        <article id="p1" class="card project" data-services="S3 CloudFront IAM" data-level="Beginner" data-status="In Progress">
+          <img src="images/project-screenshots/s3-static-site.svg" alt="S3 static site" />
+          <h3>S3 Static Website</h3>
+          <p class="meta">Services: S3, CloudFront, IAM - Level: Beginner - Status: In Progress</p>
+          <div class="chips"><span>S3</span><span>CloudFront</span><span>IAM</span><span>Free Tier</span></div>
+          <div class="actions"><a class="btn" href="#">Demo</a> <a class="btn ghost" href="blog/s3-static-website.html" target="_blank" rel="noopener">Read Blog</a></div>
+        </article>
+
+        <!-- Additional placeholder cards p9..p20 -->
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Do I need an AWS account?</summary>
+          <p>Yes. You’ll need a personal AWS account. All projects are designed to run on the AWS Free Tier. New accounts receive 12 months of Free Tier offers plus some Always Free services.</p>
+        </details>
+        <details>
+          <summary>Are these projects Free Tier‑friendly?</summary>
+          <p>Yes. Each project is scoped to fit the Free Tier. We choose services and configurations that avoid extra cost where possible. Always double‑check pricing pages and your usage.</p>
+        </details>
+        <details>
+          <summary>Will this cost money?</summary>
+          <p>It should not, if you remain within Free Tier limits and clean up promptly. Some services (e.g., data transfer, public CloudFront traffic) can incur charges depending on usage. Set a billing alarm and monitor the Cost Explorer.</p>
+        </details>
+        <details>
+          <summary>What region should I use?</summary>
+          <p>Use a region close to you that supports the required services (e.g., us-east-1). Pricing and Free Tier applicability can vary slightly by region.</p>
+        </details>
+        <details>
+          <summary>What IAM permissions do I need?</summary>
+          <p>Use least‑privilege. For learning, an administrative sandbox account or an IAM user with the specific service permissions (S3, CloudFront, Route 53, IAM) is sufficient. Avoid using root credentials.</p>
+        </details>
+        <details>
+          <summary>How do I clean up to avoid charges?</summary>
+          <p>Delete created resources when done: S3 buckets/objects, CloudFront distributions, Route 53 records/hosted zones, IAM users/roles/policies. Wait for CloudFront distribution deletion to complete.</p>
+        </details>
+        <details>
+          <summary>Do I need the AWS CLI?</summary>
+          <p>No. You can complete projects via the AWS Console. The AWS CLI is optional and useful for automation.</p>
+        </details>
+        <details>
+          <summary>Any safety tips?</summary>
+          <p>Enable a billing alarm, avoid public write permissions, don’t expose secrets, and keep buckets private unless explicitly hosting static content.</p>
+        </details>
+        <details>
+          <summary>Where are the assets and icons?</summary>
+          <p>Starter assets live under <code>images/</code>. Replace them with your own as needed.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo small" href="index.html"><img src="images/logo.svg" alt="logo" /><span>#1HrAwsCrafts</span></a>
+        <p class="muted">Mini AWS builds, every 3 days.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social">
+          <a href="#" aria-label="X (Twitter)"><img src="images/social/x.svg" alt="X" /></a>
+          <a href="#" aria-label="GitHub"><img src="images/social/github.svg" alt="GitHub" /></a>
+          <a href="#" aria-label="Discord"><img src="images/social/discord.svg" alt="Discord" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="container tiny">
+      <small>&copy; <span id="year"></span> #1HrAwsCrafts</small>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">Top</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

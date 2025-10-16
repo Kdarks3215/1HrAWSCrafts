@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - #1HrAwsCrafts</title>
+  <meta name="description" content="The story, mission, and 60-day roadmap behind #1HrAwsCrafts - build AWS skills by shipping one-hour projects." />
+  <link rel="canonical" href="about.html" />
+  <meta property="og:title" content="About - #1HrAwsCrafts" />
+  <meta property="og:description" content="Origin, creator bio, roadmap, and impact goals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="about.html" />
+  <meta property="og:image" content="images/social/og-default.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About - #1HrAwsCrafts" />
+  <meta name="twitter:description" content="Origin, creator bio, roadmap, and impact goals." />
+  <meta name="twitter:image" content="images/social/og-default.svg" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Home">
+        <img src="images/logo.svg" alt="#1HrAwsCrafts logo" />
+        <span>#1HrAwsCrafts</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-meta">
+        <div class="next-project">
+          <span class="label">Next Project:</span>
+          <span id="nextProjectDate">Calculating...</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="container">
+        <h1>About #1HrAwsCrafts</h1>
+        <p>We believe the fastest way to learn AWS is to build something small and useful &mdash; repeatedly.</p>
+      </div>
+    </section>
+
+    <section class="origin">
+      <div class="container">
+        <h2>Origin Story</h2>
+        <p>#1HrAwsCrafts began as a simple promise: spend one focused hour building something on AWS, then share the result. No marathon tutorials, no endless prep — just small, meaningful wins that build momentum.</p>
+        <p>Each project is intentionally scoped: clear start and end, minimal prerequisites, and easy cleanup. Tiny projects lower friction, a predictable 3-day cadence creates accountability, and repetition compounds into real skill. By shipping often, we reduce fear, explore core AWS services with purpose, and stay within the Free Tier whenever possible.</p>
+        <ul class="checklist">
+          <li>Small scope: one hour from start to share.</li>
+          <li>Steady rhythm: new challenge every 3 days.</li>
+          <li>Real skills: hands‑on with core AWS services.</li>
+          <li>Safe by default: Free Tier‑friendly and easy teardown.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="roadmap-note">
+      <div class="container">
+        <h2>Roadmap</h2>
+        <p>The roadmap is updated on a per-project basis. See the <a href="projects.html">Projects</a> page for the latest plan and status.</p>
+      </div>
+    </section>
+
+    <section class="requirements">
+      <div class="container">
+        <h2>Requirements</h2>
+        <ul class="checklist">
+          <li>AWS account (personal or sandbox). All projects target the AWS Free Tier.</li>
+          <li>Recommended region: a major region with required services (e.g., us-east-1).</li>
+          <li>Least-privilege IAM: use an IAM user/role with only needed permissions; avoid root user.</li>
+          <li>Cleanup: delete S3 buckets/objects, CloudFront distributions, Route 53 records/hosted zones, IAM entities after each project.</li>
+          <li>Cost safety: set a billing alarm and monitor usage in Cost Explorer.</li>
+          <li>Tools: AWS Console is enough; CLI optional.</li>
+        </ul>
+      </div>
+    </section>
+
+    
+
+    <section class="impact">
+      <div class="container grid-2">
+        <div>
+          <h2>Impact Goals</h2>
+          <ul class="checklist">
+            <li>Make AWS approachable via tiny wins</li>
+            <li>Build a repeatable practice rhythm</li>
+            <li>Demystify core services by doing</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Partnerships</h2>
+          <p>Open to collaborations with communities, educators, and tooling providers who support hands-on learning.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo small" href="index.html"><img src="images/logo.svg" alt="logo" /><span>#1HrAwsCrafts</span></a>
+        <p class="muted">Mini AWS builds, every 3 days.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social">
+          <a href="#" aria-label="X (Twitter)"><img src="images/social/x.svg" alt="X" /></a>
+          <a href="#" aria-label="GitHub"><img src="images/social/github.svg" alt="GitHub" /></a>
+          <a href="#" aria-label="Discord"><img src="images/social/discord.svg" alt="Discord" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="container tiny">
+      <small>&copy; <span id="year"></span> #1HrAwsCrafts</small>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">Top</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
